@@ -12,7 +12,8 @@ double calculateTotal( double dollarsPerHour, double secondsWorked ) {
 
 - (double)calcTotal {
 	NSTimeInterval totalSeconds = 0.0;
-	nsenumerate( [TaskPeriodMO fetchAllInManagedObjectContext:[self managedObjectContext]], TaskPeriodMO, period ) {
+	
+	nsenumerate ([[self managedObjectContext] executeFetchRequestNamed:@"billablePeriods" error:nil], TaskPeriodMO, period) {
 		totalSeconds += [period calcInterval];
 	}
 	

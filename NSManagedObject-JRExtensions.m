@@ -74,3 +74,11 @@
 }
 
 @end
+
+@implementation NSManagedObjectContext (JRExtensions)
+- (NSArray*)executeFetchRequestNamed:(NSString*)fetchRequestName_ error:(NSError**)error_ {
+	NSFetchRequest *fetchRequest = [[[self persistentStoreCoordinator] managedObjectModel] fetchRequestTemplateForName:fetchRequestName_];
+	NSAssert1(fetchRequest, @"Can't find fetch request named \"%@\".", fetchRequestName_);
+	return [self executeFetchRequest:fetchRequest error:error_];
+}
+@end

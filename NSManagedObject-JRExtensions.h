@@ -12,5 +12,8 @@
 + (NSString*)entityNameByHeuristic; // MyCoolObjectMO => @"MyCoolObject".
 + (NSEntityDescription*)entityDescriptionInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSFetchRequest*)fetchRequestForEntityInManagedObjectContext:(NSManagedObjectContext*)moc_;
+@end
 
+@interface NSManagedObjectContext (JRExtensions)
+- (NSArray*)executeFetchRequestNamed:(NSString*)fetchRequestName_ error:(NSError**)error;
 @end

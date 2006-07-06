@@ -27,11 +27,9 @@
 - (void) updateCalcIntervalKVO:(NSTimer*)timer {
 	NSManagedObjectContext *moc = [self managedObjectContext];
 	[[moc undoManager] disableUndoRegistration]; {
-		NSFetchRequest *activePeriodsFetchRequest = [[[moc persistentStoreCoordinator] managedObjectModel]  fetchRequestTemplateForName:@"activePeriods"];
-		NSAssert( activePeriodsFetchRequest, nil );
 		NSMutableSet *tasksNeedingUpdating = [NSMutableSet set];
 		BOOL changed = NO;
-		nsenumerate( [moc executeFetchRequest:activePeriodsFetchRequest error:nil], TaskPeriodMO, period ) {
+		nsenumerate( [moc executeFetchRequestNamed:@"activePeriods" error:nil], TaskPeriodMO, period ) {
 			changed = YES;
 			[period willChangeValueForKey:@"calcInterval"];
 			[period didChangeValueForKey:@"calcInterval"];
