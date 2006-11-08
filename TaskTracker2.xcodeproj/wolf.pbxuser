@@ -104,14 +104,14 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 184634494;
-			PBXWorkspaceStateSaveDate = 184634494;
+			PBXPerProjectTemplateStateSaveDate = 184659943;
+			PBXWorkspaceStateSaveDate = 184659943;
 		};
 		perUserProjectItems = {
-			7954685D0B014C8200BF1539 /* PBXBookmark */ = 7954685D0B014C8200BF1539 /* PBXBookmark */;
-			7954686B0B014DAE00BF1539 /* PBXTextBookmark */ = 7954686B0B014DAE00BF1539 /* PBXTextBookmark */;
 			7954686C0B014DAE00BF1539 /* PBXTextBookmark */ = 7954686C0B014DAE00BF1539 /* PBXTextBookmark */;
 			7954686F0B014DAE00BF1539 /* PBXTextBookmark */ = 7954686F0B014DAE00BF1539 /* PBXTextBookmark */;
+			79E591C20B01B278002875BF /* PBXTextBookmark */ = 79E591C20B01B278002875BF /* PBXTextBookmark */;
+			79E591C30B01B278002875BF /* PBXTextBookmark */ = 79E591C30B01B278002875BF /* PBXTextBookmark */;
 		};
 		sourceControlManager = 793B669A08227F4B00D8D69E /* Source Control */;
 		userBuildSettings = {
@@ -121,8 +121,8 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1053, 1610}}";
 			sepNavSelRange = "{4076, 10}";
-			sepNavVisRect = "{{0, 884}, {1053, 726}}";
-			sepNavWindowFrame = "{{159, 82}, {1092, 784}}";
+			sepNavVisRect = "{{0, 899}, {1053, 711}}";
+			sepNavWindowFrame = "{{671, 693}, {1092, 784}}";
 		};
 	};
 	2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {
@@ -159,7 +159,7 @@
 					chosenTableWidths = (
 						103.000000,
 						22.000000,
-						68.080078,
+						121.080078,
 					);
 				};
 				UIContextForLayoutManager = {
@@ -169,8 +169,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {531, 218}}",
-							"{{536, 0}, {285, 218}}",
+							"{{0, 0}, {670, 220}}",
+							"{{675, 0}, {360, 220}}",
 						);
 					};
 					diagramSplitGeometry = {
@@ -179,8 +179,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {821, 218}}",
-							"{{0, 223}, {821, 476}}",
+							"{{0, 0}, {1035, 220}}",
+							"{{0, 225}, {1035, 88}}",
 						);
 					};
 					tableSplitGeometry = {
@@ -189,8 +189,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {215, 218}}",
-							"{{220, 0}, {310, 218}}",
+							"{{0, 0}, {271, 220}}",
+							"{{276, 0}, {393, 220}}",
 						);
 					};
 				};
@@ -287,7 +287,7 @@
 					);
 				};
 				"xdesign model browser state key - shown/hidden" = 1;
-				"xdesign model diagram view visible rect key" = "{{-79, -15}, {806, 461}}";
+				"xdesign model diagram view visible rect key" = "{{-186, 0}, {1020, 73}}";
 			};
 			sepNavWindowFrame = "{{518, 98}, {821, 757}}";
 		};
@@ -380,10 +380,10 @@
 	};
 	793B66C40822818900D8D69E /* TaskMO.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {782, 924}}";
+			sepNavIntBoundsRect = "{{0, 0}, {794, 910}}";
 			sepNavSelRange = "{1309, 0}";
-			sepNavVisRect = "{{0, 0}, {782, 699}}";
-			sepNavWindowFrame = "{{495, 91}, {821, 757}}";
+			sepNavVisRect = "{{0, 0}, {782, 684}}";
+			sepNavWindowFrame = "{{1391, 617}, {821, 757}}";
 		};
 	};
 	793B66CA0822819700D8D69E /* TaskPeriodMO.h */ = {
@@ -417,17 +417,6 @@
 			sepNavVisRect = "{{0, 0}, {973, 896}}";
 			sepNavWindowFrame = "{{475, 442}, {1012, 969}}";
 		};
-	};
-	7954685D0B014C8200BF1539 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */;
-	};
-	7954686B0B014DAE00BF1539 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 793B66C40822818900D8D69E /* TaskMO.m */;
-		rLen = 1;
-		rLoc = 42;
-		rType = 1;
 	};
 	7954686C0B014DAE00BF1539 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -465,6 +454,26 @@
 			sepNavWindowFrame = "{{130, 499}, {1012, 969}}";
 		};
 	};
+	79E591C20B01B278002875BF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */;
+		name = stopAction;
+		rLen = 10;
+		rLoc = 4076;
+		rType = 0;
+		vrLen = 2028;
+		vrLoc = 2129;
+	};
+	79E591C30B01B278002875BF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 793B66C40822818900D8D69E /* TaskMO.m */;
+		name = "TaskMO.m: 46";
+		rLen = 0;
+		rLoc = 1309;
+		rType = 0;
+		vrLen = 1400;
+		vrLoc = 0;
+	};
 	8D15AC270486D014006FF6A4 /* TaskTracker2 */ = {
 		activeExec = 0;
 		executables = (
@@ -474,8 +483,8 @@
 	8D15AC360486D014006FF6A4 /* Info.plist */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {938, 812}}";
-			sepNavSelRange = "{1271, 0}";
-			sepNavVisRect = "{{0, 35}, {938, 777}}";
+			sepNavSelRange = "{1378, 0}";
+			sepNavVisRect = "{{0, 0}, {938, 762}}";
 			sepNavWindowFrame = "{{130, 43}, {977, 835}}";
 		};
 	};
