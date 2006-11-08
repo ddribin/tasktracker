@@ -33,6 +33,11 @@
 	TaskPeriodMO *taskPeriod = [TaskPeriodMO newInManagedObjectContext:[self managedObjectContext]];
 	[taskPeriod setValue:self forKey:@"owningTask"];
 	[self setValue:taskPeriod forKey:@"activePeriod"];
+	
+	[self willChangeValueForKey:@"canStart"];
+	[self didChangeValueForKey:@"canStart"];
+	[self willChangeValueForKey:@"canStop"];
+	[self didChangeValueForKey:@"canStop"];
 }
 
 - (IBAction)stopAction:(id)sender {
@@ -41,6 +46,11 @@
 	TaskPeriodMO *taskPeriod = [self valueForKey:@"activePeriod"];
 	[taskPeriod stopAction:nil];
 	[self setValue:nil forKey:@"activePeriod"];
+	
+	[self willChangeValueForKey:@"canStart"];
+	[self didChangeValueForKey:@"canStart"];
+	[self willChangeValueForKey:@"canStop"];
+	[self didChangeValueForKey:@"canStop"];
 }
 
 - (NSTimeInterval)calcInterval {

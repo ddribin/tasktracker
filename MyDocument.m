@@ -15,12 +15,17 @@
 												selector:@selector(updateCalcIntervalKVO:)
 												userInfo:nil
 												 repeats:YES] retain];
+		[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self
+                                                               selector:@selector(willSleep:)
+                                                                   name:NSWorkspaceWillSleepNotification
+																 object:nil];
 	}
 	return self;
 }
 
 - (void)dealloc {
 	[timer invalidate]; [timer release]; timer = nil;
+	[[[NSWorkspace sharedWorkspace] notificationCenter] removeObserver:self];
 	[super dealloc];
 }
 
@@ -94,6 +99,16 @@ static void paste( NSString *string ) {
 	//$88,888.88  Total Due
 	
 	paste( output );
+}
+
+- (void)willSleep:(NSNotification*)notification_ {
+	nsenumerate( [TaskMO fetchAllInManagedObjectContext:[self managedObjectContext]], TaskMO, task ) {
+		if ([task canStop])
+			[task stopAction:nil];
+	}
+	if ([self fileURL]) {
+		[self saveDocument:nil];
+	}
 }
 
 @end

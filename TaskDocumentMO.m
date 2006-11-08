@@ -20,4 +20,36 @@ double calculateTotal( double dollarsPerHour, double secondsWorked ) {
 	return calculateTotal( [[self valueForKey:@"dollarsPerHour"] doubleValue], totalSeconds );
 }
 
+- (NSMutableSet*)tasksSet {
+	return [self mutableSetValueForKey:@"tasks"];
+}
+
+//--
+
+- (void)addTasksObject:(TaskMO *)value 
+{    
+    NSSet *changedObjects = [[NSSet alloc] initWithObjects:&value count:1];
+    
+    [self willChangeValueForKey:@"tasks" withSetMutation:NSKeyValueUnionSetMutation usingObjects:changedObjects];
+    
+    [[self primitiveValueForKey: @"tasks"] addObject: value];
+    
+    [self didChangeValueForKey:@"tasks" withSetMutation:NSKeyValueUnionSetMutation usingObjects:changedObjects];
+    
+    [changedObjects release];
+}
+
+- (void)removeTasksObject:(TaskMO *)value 
+{
+    NSSet *changedObjects = [[NSSet alloc] initWithObjects:&value count:1];
+    
+    [self willChangeValueForKey:@"tasks" withSetMutation:NSKeyValueMinusSetMutation usingObjects:changedObjects];
+    
+    [[self primitiveValueForKey: @"tasks"] removeObject: value];
+    
+    [self didChangeValueForKey:@"tasks" withSetMutation:NSKeyValueMinusSetMutation usingObjects:changedObjects];
+    
+    [changedObjects release];
+}
+
 @end
