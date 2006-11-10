@@ -1,6 +1,6 @@
 #import "TaskDocumentMO.h"
 #import "TaskPeriodMO.h"
-#import "NSManagedObject-JRExtensions.h"
+#import "CoreData+JRExtensions.h"
 #import "nsenumerate.h"
 
 double calculateTotal( double dollarsPerHour, double secondsWorked ) {

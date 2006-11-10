@@ -2,7 +2,7 @@
 #import "TaskPeriodMO.h"
 #import "TaskDocumentMO.h"
 #import "MyDocument.h"
-#import "NSManagedObject-JRExtensions.h"
+#import "CoreData+JRExtensions.h"
 #import "nsenumerate.h"
 
 @implementation TaskMO

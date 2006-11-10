@@ -1,5 +1,5 @@
 #import "MyDocument.h"
-#import "NSManagedObject-JRExtensions.h"
+#import "CoreData+JRExtensions.h"
 #import "nsenumerate.h"
 #import "TaskMO.h"
 #import "TaskPeriodMO.h"
@@ -29,7 +29,7 @@
 	[super dealloc];
 }
 
-- (void) updateCalcIntervalKVO:(NSTimer*)timer {
+- (void)updateCalcIntervalKVO:(NSTimer*)timer {
 	NSManagedObjectContext *moc = [self managedObjectContext];
 	[[moc undoManager] disableUndoRegistration]; {
 		NSMutableSet *tasksNeedingUpdating = [NSMutableSet set];
