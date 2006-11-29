@@ -71,11 +71,14 @@ static void paste( NSString *string ) {
 	[output appendFormat:@"Time        Description\n"];
 	[output appendFormat:@"----------  -----------\n"];
 	NSTimeInterval totalBilledTime = 0;
-	nsenumerate( [TaskMO fetchAllInManagedObjectContext:[self managedObjectContext]], TaskMO, task ) {
+	NSArray *tasks = [TaskMO fetchAllInManagedObjectContext:[self managedObjectContext]];
+	tasks = [tasks sortedArrayUsingDescriptors:[NSArray arrayWithObject:[[[NSSortDescriptor alloc] initWithKey:@"firstStartPeriod" ascending:YES] autorelease]]];
+	nsenumerate(tasks, TaskMO, task ) {
 		NSString *taskDescription = [task valueForKey:@"taskDescription"];
 		NSTimeInterval billedTime = [task calcInterval];
 		if( [taskDescription hasSuffix:@"*"] ) {
 			taskDescription = [taskDescription substringToIndex:[taskDescription length]-1];
+			taskDescription = [taskDescription stringByAppendingFormat:@" (%@)", [IntervalFormatter format:billedTime]];
 			billedTime = 0.0;
 		}
 		totalBilledTime += billedTime;

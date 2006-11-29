@@ -61,4 +61,9 @@
 	return result;
 }
 
+- (NSDate*)firstStartPeriod {
+	NSArray *a = [[[self valueForKey:@"periods"] allObjects] sortedArrayUsingDescriptors:[NSArray arrayWithObject:[[[NSSortDescriptor alloc] initWithKey:@"start" ascending:YES] autorelease]]];
+	return [a count] ? [[a objectAtIndex:0] valueForKey:@"start"] : nil;
+}
+
 @end

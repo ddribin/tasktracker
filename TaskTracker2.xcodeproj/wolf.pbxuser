@@ -104,8 +104,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 184870673;
-			PBXWorkspaceStateSaveDate = 184870673;
+			PBXPerProjectTemplateStateSaveDate = 186524684;
+			PBXWorkspaceStateSaveDate = 186524684;
 		};
 		sourceControlManager = 793B669A08227F4B00D8D69E /* Source Control */;
 		userBuildSettings = {
@@ -113,9 +113,9 @@
 	};
 	2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1053, 1624}}";
-			sepNavSelRange = "{1036, 48}";
-			sepNavVisRect = "{{0, 0}, {1053, 726}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1053, 1652}}";
+			sepNavSelRange = "{3049, 0}";
+			sepNavVisRect = "{{0, 904}, {1053, 726}}";
 			sepNavWindowFrame = "{{204, 83}, {1092, 784}}";
 		};
 	};
@@ -161,7 +161,7 @@
 					chosenTableWidths = (
 						103.000000,
 						22.000000,
-						121.080078,
+						63.080078,
 					);
 				};
 				UIContextForLayoutManager = {
@@ -171,8 +171,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {670, 220}}",
-							"{{675, 0}, {360, 220}}",
+							"{{0, 0}, {530, 220}}",
+							"{{535, 0}, {286, 220}}",
 						);
 					};
 					diagramSplitGeometry = {
@@ -181,8 +181,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {1035, 220}}",
-							"{{0, 225}, {1035, 88}}",
+							"{{0, 0}, {821, 220}}",
+							"{{0, 225}, {821, 474}}",
 						);
 					};
 					tableSplitGeometry = {
@@ -191,8 +191,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {271, 220}}",
-							"{{276, 0}, {393, 220}}",
+							"{{0, 0}, {213, 220}}",
+							"{{218, 0}, {311, 220}}",
 						);
 					};
 				};
@@ -289,7 +289,7 @@
 					);
 				};
 				"xdesign model browser state key - shown/hidden" = 1;
-				"xdesign model diagram view visible rect key" = "{{-186, 0}, {1020, 73}}";
+				"xdesign model diagram view visible rect key" = "{{-79, -14}, {806, 459}}";
 			};
 			sepNavWindowFrame = "{{518, 98}, {821, 757}}";
 		};
@@ -303,7 +303,7 @@
 		delayBeforeContinue = 0;
 		hitCount = 1;
 		location = Foundation;
-		modificationTime = 184740913.489344;
+		modificationTime = 186523968.644192;
 		state = 1;
 		symbolName = "-[NSException raise]";
 	};
@@ -378,40 +378,48 @@
 	793B66C30822818900D8D69E /* TaskMO.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {782, 699}}";
-			sepNavSelRange = "{204, 0}";
+			sepNavSelRange = "{205, 28}";
 			sepNavVisRect = "{{0, 0}, {782, 699}}";
 			sepNavWindowFrame = "{{588, 111}, {821, 757}}";
 		};
 	};
 	793B66C40822818900D8D69E /* TaskMO.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {782, 924}}";
-			sepNavSelRange = "{1302, 0}";
-			sepNavVisRect = "{{0, 1}, {782, 699}}";
-			sepNavWindowFrame = "{{1391, 617}, {821, 757}}";
+			sepNavIntBoundsRect = "{{0, 0}, {782, 1008}}";
+			sepNavSelRange = "{2035, 0}";
+			sepNavVisRect = "{{0, 302}, {782, 699}}";
+			sepNavWindowFrame = "{{731, 175}, {821, 757}}";
 		};
 	};
 	793B66CA0822819700D8D69E /* TaskPeriodMO.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {782, 684}}";
-			sepNavSelRange = "{171, 0}";
-			sepNavVisRect = "{{0, 0}, {782, 684}}";
-			sepNavWindowFrame = "{{1543, 727}, {821, 757}}";
+			sepNavIntBoundsRect = "{{0, 0}, {782, 699}}";
+			sepNavSelRange = "{144, 0}";
+			sepNavVisRect = "{{0, 0}, {782, 699}}";
+			sepNavWindowFrame = "{{690, 139}, {821, 757}}";
 		};
 	};
 	793B66CB0822819700D8D69E /* TaskPeriodMO.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {782, 684}}";
+			sepNavIntBoundsRect = "{{0, 0}, {782, 699}}";
 			sepNavSelRange = "{424, 0}";
-			sepNavVisRect = "{{0, 0}, {782, 684}}";
-			sepNavWindowFrame = "{{1590, 667}, {821, 757}}";
+			sepNavVisRect = "{{0, 0}, {782, 699}}";
+			sepNavWindowFrame = "{{745, 87}, {821, 757}}";
+		};
+	};
+	79A384340B02579A00386B39 /* CoreData+JRExtensions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {979, 857}}";
+			sepNavSelRange = "{1364, 0}";
+			sepNavVisRect = "{{0, 0}, {979, 857}}";
+			sepNavWindowFrame = "{{84, 45}, {1018, 915}}";
 		};
 	};
 	79A384350B02579A00386B39 /* CoreData+JRExtensions.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {890, 2548}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRect = "{{0, 0}, {890, 650}}";
+			sepNavSelRange = "{6784, 0}";
+			sepNavVisRect = "{{0, 1898}, {890, 650}}";
 			sepNavWindowFrame = "{{38, 170}, {929, 708}}";
 		};
 	};
@@ -440,7 +448,7 @@
 	8D15AC360486D014006FF6A4 /* Info.plist */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {938, 812}}";
-			sepNavSelRange = "{0, 0}";
+			sepNavSelRange = "{1374, 0}";
 			sepNavVisRect = "{{0, 35}, {938, 777}}";
 			sepNavWindowFrame = "{{130, 43}, {977, 835}}";
 		};

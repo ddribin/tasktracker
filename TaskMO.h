@@ -9,5 +9,6 @@
 - (IBAction)stopAction:(id)sender;
 
 - (NSTimeInterval)calcInterval;
+- (NSDate*)firstStartPeriod;
 
 @end
