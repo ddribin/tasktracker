@@ -23,6 +23,20 @@
 	return self;
 }
 
+- (void)awakeFromNib {
+    NSSortDescriptor * sd = [[NSSortDescriptor alloc] initWithKey:@"firstStartPeriod" ascending:YES];
+#if 0
+    [tasksController setSortDescriptors: [NSArray arrayWithObject: sd]];
+#else
+    // If executed immediately, an 'Unknown key in query. firstStartPeriod' exception is thrown
+    // Should this be called from a different method?
+    [tasksController performSelector: @selector(setSortDescriptors:)
+                          withObject: [NSArray arrayWithObject: sd]
+                          afterDelay: 0.0f];
+#endif
+    [sd release];
+}
+
 - (void)dealloc {
 	[timer invalidate]; [timer release]; timer = nil;
 	[[[NSWorkspace sharedWorkspace] notificationCenter] removeObserver:self];
@@ -85,7 +99,10 @@ static void paste( NSString *string ) {
 		[output appendFormat:@"  %@  %@\n", [IntervalFormatter format:billedTime], taskDescription ];
 	}
 	[output appendFormat:@"----------  -----------\n"];
-	[output appendFormat:@"  %@  Total Time\n", [IntervalFormatter format:totalBilledTime]];
+	[output appendFormat:@"  %@  Total Time (%.3f hours or %.3f minutes)\n",
+        [IntervalFormatter format:totalBilledTime],
+        totalBilledTime/3600, totalBilledTime/60];
+	[output appendFormat:@"%10.2f  Total Minutes\n", totalBilledTime/60];
 	NSNumberFormatter *moneyFormatter = [[[NSNumberFormatter alloc] init] autorelease]; [moneyFormatter setFormat:@"__,__0.00"];
 	
 	double dollarsPerHour = [[[self taskDocument] valueForKey:@"dollarsPerHour"] doubleValue];

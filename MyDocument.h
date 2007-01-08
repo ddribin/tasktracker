@@ -2,6 +2,7 @@
 #import "TaskDocumentMO.h"
 
 @interface MyDocument : NSPersistentDocument {
+    IBOutlet NSArrayController * tasksController;
 	NSTimer	*timer;
 }
 
