@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		775BDEF1067A8BF0009058FE /* MyDocument.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */; };
 		775DFF38067A968500C5B868 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		7928BE5C0B58A21F0000C258 /* CoreData+PatchRadar4828429.m in Sources */ = {isa = PBXBuildFile; fileRef = 7928BE5B0B58A21F0000C258 /* CoreData+PatchRadar4828429.m */; };
 		793B66BE0822817F00D8D69E /* TaskDocumentMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 793B66BD0822817F00D8D69E /* TaskDocumentMO.m */; };
 		793B66C50822818900D8D69E /* TaskMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 793B66C40822818900D8D69E /* TaskMO.m */; };
 		793B66CC0822819700D8D69E /* TaskPeriodMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 793B66CB0822819700D8D69E /* TaskPeriodMO.m */; };
@@ -43,6 +44,7 @@
 		32DBCF750370BD2300C91783 /* TaskTracker2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTracker2_Prefix.pch; sourceTree = "<group>"; };
 		775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
 		7788DA0506752A1600599AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		7928BE5B0B58A21F0000C258 /* CoreData+PatchRadar4828429.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "CoreData+PatchRadar4828429.m"; path = "../CoreData+PatchRadar4828429/CoreData+PatchRadar4828429.m"; sourceTree = "<group>"; };
 		793B66BC0822817F00D8D69E /* TaskDocumentMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDocumentMO.h; sourceTree = "<group>"; };
 		793B66BD0822817F00D8D69E /* TaskDocumentMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDocumentMO.m; sourceTree = "<group>"; };
 		793B66C30822818900D8D69E /* TaskMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskMO.h; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 		79E11D59098D414E000E8E93 /* IntervalFormatter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = IntervalFormatter.m; sourceTree = "<group>"; };
 		79E11D82098D440D000E8E93 /* nsenumerate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = nsenumerate.h; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D15AC370486D014006FF6A4 /* TaskTracker2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D15AC370486D014006FF6A4 /* TaskTracker2.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TaskTracker2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				79E11D82098D440D000E8E93 /* nsenumerate.h */,
 				79A384340B02579A00386B39 /* CoreData+JRExtensions.h */,
 				79A384350B02579A00386B39 /* CoreData+JRExtensions.m */,
+				7928BE5B0B58A21F0000C258 /* CoreData+PatchRadar4828429.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				793B66CC0822819700D8D69E /* TaskPeriodMO.m in Sources */,
 				79E11D5A098D414E000E8E93 /* IntervalFormatter.m in Sources */,
 				79A384360B02579A00386B39 /* CoreData+JRExtensions.m in Sources */,
+				7928BE5C0B58A21F0000C258 /* CoreData+PatchRadar4828429.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
