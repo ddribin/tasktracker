@@ -38,6 +38,10 @@
 	[self didChangeValueForKey:@"canStart"];
 	[self willChangeValueForKey:@"canStop"];
 	[self didChangeValueForKey:@"canStop"];
+    
+    if (([[NSApp currentEvent] modifierFlags] & NSAlternateKeyMask) == NSAlternateKeyMask) {
+        [[[[NSAppleScript alloc] initWithSource:@"tell document 1 of application \"FlexTime\" to set running to true"] autorelease] executeAndReturnError:nil];
+    }
 }
 
 - (IBAction)stopAction:(id)sender {
@@ -51,6 +55,10 @@
 	[self didChangeValueForKey:@"canStart"];
 	[self willChangeValueForKey:@"canStop"];
 	[self didChangeValueForKey:@"canStop"];
+    
+    if (([[NSApp currentEvent] modifierFlags] & NSAlternateKeyMask) == NSAlternateKeyMask) {
+        [[[[NSAppleScript alloc] initWithSource:@"tell document 1 of application \"FlexTime\" to set running to false"] autorelease] executeAndReturnError:nil];
+    }
 }
 
 - (NSTimeInterval)calcInterval {
