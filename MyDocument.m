@@ -156,14 +156,16 @@ static void paste( NSString *string ) {
     }
     
     NSArray * days = [timeByDay allKeys];
-    NSLog(@"days: %@", days);
     days = [days sortedArrayUsingSelector:@selector(compare:)];
-    NSLog(@"days: %@", days);
+    NSTimeInterval totalBilledTime = 0;
     nsenumerate(days, NSString, day) {
         NSTimeInterval billedTime = [[timeByDay objectForKey:day] doubleValue];
+        totalBilledTime += billedTime;
 		[output appendFormat:@"%@  %@\n", day, [IntervalFormatter format:billedTime]];
     }
-    	
+	[output appendFormat:@"----------  -----------\n"];
+	[output appendFormat:@"Total       %@", [IntervalFormatter format:totalBilledTime]];
+    
 	paste( output );
 }
 
