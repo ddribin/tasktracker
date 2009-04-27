@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552E8AD60F93C514002FECE7 /* CoreData+JRExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E8AD50F93C514002FECE7 /* CoreData+JRExtensions.m */; };
+		552E8B540F93CD54002FECE7 /* CoreData+PatchRadar4828429.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E8B530F93CD54002FECE7 /* CoreData+PatchRadar4828429.m */; };
 		775BDEF1067A8BF0009058FE /* MyDocument.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */; };
 		775DFF38067A968500C5B868 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
-		7928BE5C0B58A21F0000C258 /* CoreData+PatchRadar4828429.m in Sources */ = {isa = PBXBuildFile; fileRef = 7928BE5B0B58A21F0000C258 /* CoreData+PatchRadar4828429.m */; };
 		793B66BE0822817F00D8D69E /* TaskDocumentMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 793B66BD0822817F00D8D69E /* TaskDocumentMO.m */; };
 		793B66C50822818900D8D69E /* TaskMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 793B66C40822818900D8D69E /* TaskMO.m */; };
 		793B66CC0822819700D8D69E /* TaskPeriodMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 793B66CB0822819700D8D69E /* TaskPeriodMO.m */; };
 		79476D820B02EBA90008B0B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79476D810B02EBA90008B0B7 /* Carbon.framework */; };
-		79A384360B02579A00386B39 /* CoreData+JRExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A384350B02579A00386B39 /* CoreData+JRExtensions.m */; };
 		79E11BBD098CA5AB000E8E93 /* Aqua2_Add_Inactive.tif in Resources */ = {isa = PBXBuildFile; fileRef = 79E11BBA098CA5AB000E8E93 /* Aqua2_Add_Inactive.tif */; };
 		79E11BBE098CA5AB000E8E93 /* Aqua2_Add_Pressed.tif in Resources */ = {isa = PBXBuildFile; fileRef = 79E11BBB098CA5AB000E8E93 /* Aqua2_Add_Pressed.tif */; };
 		79E11BBF098CA5AB000E8E93 /* Aqua2_Add.tif in Resources */ = {isa = PBXBuildFile; fileRef = 79E11BBC098CA5AB000E8E93 /* Aqua2_Add.tif */; };
@@ -42,9 +42,11 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* TaskTracker2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTracker2_Prefix.pch; sourceTree = "<group>"; };
+		552E8AD40F93C514002FECE7 /* CoreData+JRExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+JRExtensions.h"; sourceTree = "<group>"; };
+		552E8AD50F93C514002FECE7 /* CoreData+JRExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreData+JRExtensions.m"; sourceTree = "<group>"; };
+		552E8B530F93CD54002FECE7 /* CoreData+PatchRadar4828429.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreData+PatchRadar4828429.m"; sourceTree = "<group>"; };
 		775BDEF0067A8BF0009058FE /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
 		7788DA0506752A1600599AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		7928BE5B0B58A21F0000C258 /* CoreData+PatchRadar4828429.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "CoreData+PatchRadar4828429.m"; path = "../CoreData+PatchRadar4828429/CoreData+PatchRadar4828429.m"; sourceTree = "<group>"; };
 		793B66BC0822817F00D8D69E /* TaskDocumentMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDocumentMO.h; sourceTree = "<group>"; };
 		793B66BD0822817F00D8D69E /* TaskDocumentMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDocumentMO.m; sourceTree = "<group>"; };
 		793B66C30822818900D8D69E /* TaskMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskMO.h; sourceTree = "<group>"; };
@@ -52,8 +54,6 @@
 		793B66CA0822819700D8D69E /* TaskPeriodMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskPeriodMO.h; sourceTree = "<group>"; };
 		793B66CB0822819700D8D69E /* TaskPeriodMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskPeriodMO.m; sourceTree = "<group>"; };
 		79476D810B02EBA90008B0B7 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = "<group>"; };
-		79A384340B02579A00386B39 /* CoreData+JRExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "CoreData+JRExtensions.h"; path = "../CoreData+JRExtensions/CoreData+JRExtensions.h"; sourceTree = SOURCE_ROOT; };
-		79A384350B02579A00386B39 /* CoreData+JRExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "CoreData+JRExtensions.m"; path = "../CoreData+JRExtensions/CoreData+JRExtensions.m"; sourceTree = SOURCE_ROOT; };
 		79E11BBA098CA5AB000E8E93 /* Aqua2_Add_Inactive.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Aqua2_Add_Inactive.tif; sourceTree = "<group>"; };
 		79E11BBB098CA5AB000E8E93 /* Aqua2_Add_Pressed.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Aqua2_Add_Pressed.tif; sourceTree = "<group>"; };
 		79E11BBC098CA5AB000E8E93 /* Aqua2_Add.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Aqua2_Add.tif; sourceTree = "<group>"; };
@@ -112,6 +112,7 @@
 			children = (
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				E1B74B1A0667B4A90069E3BA /* Models */,
+				552E8AD30F93C514002FECE7 /* vendor */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
@@ -128,9 +129,6 @@
 				79E11D58098D414E000E8E93 /* IntervalFormatter.h */,
 				79E11D59098D414E000E8E93 /* IntervalFormatter.m */,
 				79E11D82098D440D000E8E93 /* nsenumerate.h */,
-				79A384340B02579A00386B39 /* CoreData+JRExtensions.h */,
-				79A384350B02579A00386B39 /* CoreData+JRExtensions.m */,
-				7928BE5B0B58A21F0000C258 /* CoreData+PatchRadar4828429.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -169,6 +167,16 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		552E8AD30F93C514002FECE7 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				552E8AD40F93C514002FECE7 /* CoreData+JRExtensions.h */,
+				552E8AD50F93C514002FECE7 /* CoreData+JRExtensions.m */,
+				552E8B530F93CD54002FECE7 /* CoreData+PatchRadar4828429.m */,
+			);
+			path = vendor;
 			sourceTree = "<group>";
 		};
 		E1B74B1A0667B4A90069E3BA /* Models */ = {
@@ -255,8 +263,8 @@
 				793B66C50822818900D8D69E /* TaskMO.m in Sources */,
 				793B66CC0822819700D8D69E /* TaskPeriodMO.m in Sources */,
 				79E11D5A098D414E000E8E93 /* IntervalFormatter.m in Sources */,
-				79A384360B02579A00386B39 /* CoreData+JRExtensions.m in Sources */,
-				7928BE5C0B58A21F0000C258 /* CoreData+PatchRadar4828429.m in Sources */,
+				552E8AD60F93C514002FECE7 /* CoreData+JRExtensions.m in Sources */,
+				552E8B540F93CD54002FECE7 /* CoreData+PatchRadar4828429.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +376,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 4.0;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Development;
@@ -376,6 +386,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 4.0;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Deployment;
@@ -384,6 +396,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 4.0;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Default;
