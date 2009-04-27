@@ -123,6 +123,50 @@ static void paste( NSString *string ) {
 	paste( output );
 }
 
+- (NSString *)yearMonthDayOfDate:(NSDate *)date {
+    NSTimeZone * localTimeZone = [NSTimeZone localTimeZone];
+    NSDateFormatter * formatter = [[[NSDateFormatter alloc] init] autorelease];
+    [formatter setFormatterBehavior:NSDateFormatterBehavior10_4];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    [formatter setTimeZone:localTimeZone];
+    NSString * yearMonthDay = [formatter stringFromDate:date];
+    return yearMonthDay;
+}
+
+- (IBAction)copyByDayTextReport:(id)sender {
+	NSMutableString *output = [NSMutableString string];
+	
+	[output appendFormat:@"Day         Time\n"];
+	[output appendFormat:@"----------  -----------\n"];
+    NSArray *periods = [TaskPeriodMO fetchAllInManagedObjectContext:[self managedObjectContext]];
+    NSMutableDictionary * timeByDay = [NSMutableDictionary dictionary];
+    nsenumerate(periods, TaskPeriodMO, period) {
+        NSDate * start = [period valueForKey:@"start"];
+		NSTimeInterval billedTime = [period calcInterval];
+        NSString * day = [self yearMonthDayOfDate:start];
+        NSNumber * accumlatedTime = [timeByDay objectForKey:day];
+        if (accumlatedTime == nil) {
+            accumlatedTime = [NSNumber numberWithDouble:billedTime];
+        } else {
+            NSTimeInterval currentTime = [accumlatedTime doubleValue];
+            accumlatedTime = [NSNumber numberWithDouble:currentTime + billedTime];
+        }
+        
+        [timeByDay setObject:accumlatedTime forKey:day];
+    }
+    
+    NSArray * days = [timeByDay allKeys];
+    NSLog(@"days: %@", days);
+    days = [days sortedArrayUsingSelector:@selector(compare:)];
+    NSLog(@"days: %@", days);
+    nsenumerate(days, NSString, day) {
+        NSTimeInterval billedTime = [[timeByDay objectForKey:day] doubleValue];
+		[output appendFormat:@"%@  %@\n", day, [IntervalFormatter format:billedTime]];
+    }
+    	
+	paste( output );
+}
+
 - (void)willSleep:(NSNotification*)notification_ {
 	nsenumerate( [TaskMO fetchAllInManagedObjectContext:[self managedObjectContext]], TaskMO, task ) {
 		if ([task canStop])
