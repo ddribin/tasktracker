@@ -60,7 +60,9 @@
 		}
 		if( changed ) {
 			[[self taskDocument] willChangeValueForKey:@"calcTotal"];
+			[[self taskDocument] willChangeValueForKey:@"calcInterval"];
 			[[self taskDocument] didChangeValueForKey:@"calcTotal"];
+			[[self taskDocument] didChangeValueForKey:@"calcInterval"];
 		}
 	}
 	[[moc undoManager] enableUndoRegistration];
