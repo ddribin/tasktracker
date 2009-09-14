@@ -35,6 +35,12 @@
                           afterDelay: 0.0f];
 #endif
     [sd release];
+	
+	sd = [[NSSortDescriptor alloc] initWithKey:@"start" ascending:YES];
+	[taskPeriodsController performSelector: @selector(setSortDescriptors:)
+								withObject: [NSArray arrayWithObject: sd]
+								afterDelay: 0.0f];
+	[sd release];
 }
 
 - (void)dealloc {
