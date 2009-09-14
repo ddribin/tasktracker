@@ -74,4 +74,8 @@
 	return [a count] ? [[a objectAtIndex:0] valueForKey:@"start"] : nil;
 }
 
++ (NSSet *)keyPathsForValuesAffectingFirstStartPeriod {
+	return [NSSet setWithObjects:@"periods", nil];
+}
+
 @end
