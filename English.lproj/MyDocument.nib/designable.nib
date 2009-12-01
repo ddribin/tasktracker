@@ -2,17 +2,17 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1040</int>
-		<string key="IBDocument.SystemVersion">10B504</string>
+		<string key="IBDocument.SystemVersion">11A56</string>
 		<string key="IBDocument.InterfaceBuilderVersion">732</string>
-		<string key="IBDocument.AppKitVersion">1038.2</string>
-		<string key="IBDocument.HIToolboxVersion">437.00</string>
+		<string key="IBDocument.AppKitVersion">1054.1</string>
+		<string key="IBDocument.HIToolboxVersion">474.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">732</string>
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="21"/>
+			<integer value="6"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -41,12 +41,12 @@
 			<object class="NSWindowTemplate" id="741812116">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{120, 568}, {569, 475}}</string>
-				<int key="NSWTFlags">1886912512</int>
+				<string key="NSWindowRect">{{77, 326}, {569, 475}}</string>
+				<int key="NSWTFlags">1881669632</int>
 				<string key="NSWindowTitle">Window</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<string key="NSViewClass">View</string>
-				<string key="NSWindowContentMaxSize">{1.79769e+308, 1.79769e+308}</string>
+				<string key="NSWindowContentMaxSize">{1.7976931348623157e+308, 1.7976931348623157e+308}</string>
 				<string key="NSWindowContentMinSize">{131.131, 86}</string>
 				<object class="NSView" key="NSWindowView" id="970491392">
 					<reference key="NSNextResponder"/>
@@ -56,7 +56,7 @@
 						<object class="NSButton" id="214314663">
 							<reference key="NSNextResponder" ref="970491392"/>
 							<int key="NSvFlags">292</int>
-							<string key="NSFrame">{{42, 20}, {23, 22}}</string>
+							<string key="NSFrame">{{43, 20}, {23, 22}}</string>
 							<reference key="NSSuperview" ref="970491392"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="150880872">
@@ -866,9 +866,9 @@
 					<string key="NSFrameSize">{569, 475}</string>
 					<reference key="NSSuperview"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMinSize">{131.131, 108}</string>
-				<string key="NSMaxSize">{1.79769e+308, 1.79769e+308}</string>
+				<string key="NSMaxSize">{1.7976931348623157e+308, 1.7976931348623157e+308}</string>
 			</object>
 			<object class="NSArrayController" id="928039693">
 				<object class="NSMutableArray" key="NSDeclaredKeys">
@@ -920,7 +920,7 @@
 				</object>
 				<bool key="NSEditable">YES</bool>
 				<object class="_NSManagedProxy" key="_NSManagedProxy">
-					<string key="NSEntityName">xc</string>
+					<string key="NSEntityName">TaskDocument</string>
 				</object>
 				<bool key="_NSIsUsingManagedProxy">YES</bool>
 			</object>
@@ -1939,9 +1939,9 @@
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>{{329, 381}, {569, 475}}</string>
+					<string>{{327, 375}, {569, 475}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{329, 381}, {569, 475}}</string>
+					<string>{{327, 375}, {569, 475}}</string>
 					<boolean value="YES"/>
 					<boolean value="YES"/>
 					<string>{131.131, 86}</string>
