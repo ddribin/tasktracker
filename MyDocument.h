@@ -3,6 +3,7 @@
 
 @interface MyDocument : NSPersistentDocument {
     IBOutlet NSArrayController * tasksController;
+    IBOutlet NSArrayController * taskPeriodsController;
 	NSTimer	*timer;
 }
 
